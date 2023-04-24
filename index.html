@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mi página de GitHub</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header>
+      <h1>Mi nombre</h1>
+    </header>
+
+    <div class="container">
+      <h2>Intereses y logros</h2>
+      <p>Aquí puedes escribir sobre tus intereses y logros.</p>
+
+      <div class="blog">
+        <h2>Título del post</h2>
+        <p>Aquí puedes escribir el contenido de tu post. Puedes incluir código, imágenes y lo que necesites para explicar el tema.</p>
+
+        <pre><code>// Aquí puedes incluir código de ejemplo
+</code></pre>
+
+        <img src="https://via.placeholder.com/800x400" alt="Imagen de ejemplo">
+
+        <p>Otro párrafo para seguir explicando el tema.</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>Mi página de GitHub &copy; <span id="year"></span></p>
+    </footer>
+
+    <script>
+      // Obtener la fecha actual
+      const today = new Date();
+      const year = today.getFullYear();
+
+      // Actualizar el año en el footer
+      const yearElement = document.getElementById('year');
+      yearElement.textContent = year;
+    </script>
+  </body>
+</html>
